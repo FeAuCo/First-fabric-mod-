@@ -12,7 +12,7 @@
 		"sources": "https://github.com/FeAuCo/Fabric-First-Mod"
 	},
 	"license": "MIT",
-	"icon": "assets/firstmod/icon.png",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
