@@ -29,7 +29,7 @@ public class ModBlocks {
     }
 
     public static void registerModBlocks() {
-        FirstMod.LOGGER.info("Registering Blocks for" + FirstMod.MOD_ID);
+        FirstMod.LOGGER.info("Registering Blocks for " + FirstMod.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {entries.add(ModBlocks.ACCELERATOR); entries.add(ModBlocks.ILLUMINATOR);});
     }
 }

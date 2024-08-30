@@ -17,7 +17,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        FirstMod.LOGGER.info("Registering Items for" + FirstMod.MOD_ID);
+        FirstMod.LOGGER.info("Registering Items for " + FirstMod.MOD_ID);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {entries.add(EXPLOSIVE_DIAMOND); entries.add(PIVAS_BOTTLE);});
     }
 

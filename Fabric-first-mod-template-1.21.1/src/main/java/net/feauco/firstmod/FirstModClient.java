@@ -9,6 +9,6 @@ public class FirstModClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ILLUMINATOR, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.ILLUMINATOR, RenderLayer.getCutout());
     }
 }

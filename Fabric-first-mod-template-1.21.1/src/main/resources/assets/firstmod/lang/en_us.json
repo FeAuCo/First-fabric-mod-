@@ -3,5 +3,8 @@
   "item.firstmod.pivas_bottle" : "Bottle for pivas",
 
   "block.firstmod.accelerator": "Accelerator",
-  "block.firstmod.illuminator": "Illuminator"
+  "block.firstmod.illuminator": "Illuminator",
+
+  "itemgroup.firstmod.custom_items" : "Custom items",
+  "itemgroup.firstmod.custom_blocks" : "Custom blocks"
 }
