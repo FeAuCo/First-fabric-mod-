@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item EXPLOSIVE_DIAMOND = registerItem("explosive_diamond", new Item(new Item.Settings()));
     public static final Item PIVAS_BOTTLE = registerItem("pivas_bottle", new Item(new Item.Settings()));
+    public static final Item RAW_PIVAS_ORE = registerItem("raw_pivas_ore", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(FirstMod.MOD_ID, name), item);
@@ -18,7 +19,7 @@ public class ModItems {
 
     public static void registerModItems() {
         FirstMod.LOGGER.info("Registering Items for " + FirstMod.MOD_ID);
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {entries.add(EXPLOSIVE_DIAMOND); entries.add(PIVAS_BOTTLE);});
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {entries.add(EXPLOSIVE_DIAMOND); entries.add(PIVAS_BOTTLE);entries.add(RAW_PIVAS_ORE);});
     }
 
 }

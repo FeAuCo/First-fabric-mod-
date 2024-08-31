@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "blocks",
+  "pattern": [
+    "101",
+    "020",
+    "101"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_concrete"
+    },
+    "1": {
+      "item": "minecraft:redstone_block"
+    },
+    "2": {
+      "item": "firstmod:pivas_bottle"
+    }
+  },
+  "result": {
+    "id": "firstmod:accelerator",
+    "count": 1
+  }
+}
