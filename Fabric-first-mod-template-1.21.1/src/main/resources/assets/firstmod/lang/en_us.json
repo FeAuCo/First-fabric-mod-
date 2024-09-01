@@ -2,10 +2,12 @@
   "item.firstmod.explosive_diamond" : "Diamond",
   "item.firstmod.pivas_bottle" : "Bottle for pivas",
   "item.firstmod.raw_pivas_ore": "Raw Pivas Ore",
+  "item.firstmod.poisoned_dagger": "Poisoned Dagger",
 
   "block.firstmod.accelerator": "Accelerator",
   "block.firstmod.illuminator": "Illuminator",
   "block.firstmod.pivas_ore": "Pivas Ore",
+  "block.firstmod.spikes": "Spikes",
 
   "itemgroup.firstmod.custom_items" : "Custom items",
   "itemgroup.firstmod.custom_blocks" : "Custom blocks"
