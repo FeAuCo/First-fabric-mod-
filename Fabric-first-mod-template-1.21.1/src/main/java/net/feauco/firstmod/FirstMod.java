@@ -2,6 +2,7 @@ package net.feauco.firstmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.feauco.firstmod.blocks.ModBlocks;
 import net.feauco.firstmod.items.ModItemGroups;
 import net.feauco.firstmod.items.ModItems;
@@ -17,5 +18,6 @@ public class FirstMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		FuelRegistry.INSTANCE.add(ModItems.HYDROGEN, 2000);
 	}
 }
