@@ -1,15 +1,21 @@
 {
   "item.firstmod.explosive_diamond" : "Diamond",
   "item.firstmod.pivas_bottle" : "Bottle for pivas",
-  "item.firstmod.raw_pivas_ore": "Raw Pivas Ore",
-  "item.firstmod.poisoned_dagger": "Poisoned Dagger",
+  "item.firstmod.raw_pivas_ore": "§eRaw Pivas Ore",
+  "item.firstmod.poisoned_dagger": "§2Poisoned Dagger",
   "item.firstmod.hydrogen": "Hydrogen",
 
   "block.firstmod.accelerator": "Accelerator",
   "block.firstmod.illuminator": "Illuminator",
-  "block.firstmod.pivas_ore": "Pivas Ore",
+  "block.firstmod.pivas_ore": "§ePivas Ore",
   "block.firstmod.spikes": "Spikes",
 
   "itemgroup.firstmod.custom_items" : "Custom items",
-  "itemgroup.firstmod.custom_blocks" : "Custom blocks"
+  "itemgroup.firstmod.custom_blocks" : "Custom blocks",
+
+  "tooltip.firstmod.poisoned_dagger.1": "Applies §2POISON§r effect §l2§r for §l2§r seconds",
+  "tooltip.firstmod.poisoned_dagger.2": "Can also apply §8SLOWNESS§r effect §l2§r for §l2§r seconds with a §l15%§r chance",
+  "tooltip.firstmod.poisoned_dagger.alt": "Sound is reproduced when §8SLOWNESS§r is applied",
+  "tooltip.firstmod.poisoned_dagger.hint": "Press §e§lALT§r to see more Information",
+  "tooltip.firstmod.raw_pivas_ore": "§e§lGET A CHARGE§r"
 }

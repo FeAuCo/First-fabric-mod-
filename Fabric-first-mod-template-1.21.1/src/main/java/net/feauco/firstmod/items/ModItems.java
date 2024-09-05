@@ -2,15 +2,29 @@ package net.feauco.firstmod.items;
 
 import net.feauco.firstmod.FirstMod;
 import net.feauco.firstmod.items.custom.PoisonedDagger;
+import net.minecraft.client.gui.screen.Screen;
+import net.minecraft.component.ComponentType;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+
+import java.util.List;
 
 public class ModItems {
     public static final Item EXPLOSIVE_DIAMOND = registerItem("explosive_diamond", new Item(new Item.Settings()));
     public static final Item PIVAS_BOTTLE = registerItem("pivas_bottle", new Item(new Item.Settings()));
-    public static final Item RAW_PIVAS_ORE = registerItem("raw_pivas_ore", new Item(new Item.Settings()));
+    public static final Item RAW_PIVAS_ORE = registerItem("raw_pivas_ore", new Item(new Item.Settings())
+    {
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.firstmod.raw_pivas_ore"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
 
     public static final Item POISONED_DAGGER = registerItem("poisoned_dagger", new PoisonedDagger(new Item.Settings().maxDamage(250)));
 
