@@ -29,6 +29,7 @@ public class ModItems {
     public static final Item POISONED_DAGGER = registerItem("poisoned_dagger", new PoisonedDagger(new Item.Settings().maxDamage(250)));
 
     public static final Item HYDROGEN = registerItem("hydrogen", new Item(new Item.Settings().food(ModFoodComponents.HYDROGEN)));
+
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(FirstMod.MOD_ID, name), item);
     }
