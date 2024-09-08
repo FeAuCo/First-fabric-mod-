@@ -1,10 +1,13 @@
 package net.feauco.firstmod.blocks.custom;
 
+import net.feauco.firstmod.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
@@ -27,5 +30,15 @@ public class Spikes extends Block {
         if (entity instanceof LivingEntity) {
             entity.damage(world.getDamageSources().cactus(), 3.0F);
         }
+        else if (entity instanceof ItemEntity itemEntity) {
+            if (isValidItem(itemEntity.getStack())) {
+                itemEntity.kill();
+            }
+        }
+    }
+
+    private boolean isValidItem(ItemStack stack) {
+        return stack.isIn(ModTags.Items.ITEMS_TO_DESTROY);
     }
 }
+
