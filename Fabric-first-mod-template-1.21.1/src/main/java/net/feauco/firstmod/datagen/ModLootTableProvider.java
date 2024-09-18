@@ -16,6 +16,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.SPIKES);
+        addDrop(ModBlocks.ACCELERATING_BUTTON);
+        addDrop(ModBlocks.ACCELERATING_SLAB, slabDrops(ModBlocks.ACCELERATING_SLAB));
+        addDrop(ModBlocks.ACCELERATING_STAIRS);
+        addDrop(ModBlocks.ACCELERATING_PRESSURE_PLATE);
         addDrop(ModBlocks.PIVAS_ORE, oreDrops(ModBlocks.PIVAS_ORE, ModItems.RAW_PIVAS_ORE));
     }
 }
