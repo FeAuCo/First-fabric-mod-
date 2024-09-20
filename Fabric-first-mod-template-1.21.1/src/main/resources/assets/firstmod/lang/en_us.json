@@ -8,10 +8,9 @@
   "block.firstmod.accelerator": "Accelerator",
   "block.firstmod.illuminator": "Illuminator",
   "block.firstmod.pivas_ore": "§ePivas Ore",
-  "block.firstmod.accelerating_slab": "Accelerating Slab",
   "block.firstmod.accelerating_button": "Accelerating Button",
   "block.firstmod.accelerating_stairs": "Accelerating Stairs",
-  "block.firstmod.accelerating_pressure_plate": "Accelerating Pressure Plate",
+  "block.firstmod.invisible_pressure_plate": "Invisible Pressure Plate",
 
   "itemgroup.firstmod.custom_items" : "Custom items",
   "itemgroup.firstmod.custom_blocks" : "Custom blocks",

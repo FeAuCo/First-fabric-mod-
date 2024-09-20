@@ -29,9 +29,7 @@ public class ModBlocks {
     public static final Block SPIKES = registerBlock("spikes", new Spikes(AbstractBlock.Settings.create().requiresTool().strength(3, 3).velocityMultiplier(0.5f).sounds(BlockSoundGroup.METAL).nonOpaque()));
 
     public static final Block ACCELERATING_STAIRS = registerBlock("accelerating_stairs", new StairsBlock(ModBlocks.ACCELERATOR.getDefaultState(), AbstractBlock.Settings.create().strength(2, 2).sounds(BlockSoundGroup.BASALT).velocityMultiplier(1.5f)));
-    public static final Block ACCELERATING_SLAB = registerBlock("accelerating_slab", new SlabBlock(AbstractBlock.Settings.create().strength(2, 2).sounds(BlockSoundGroup.BASALT).velocityMultiplier(1.5f)));
-
-    public static final Block ACCELERATING_BUTTON = registerBlock("accelerating_button", new ButtonBlock(BlockSetType.IRON, 1, AbstractBlock.Settings.create().strength(2, 2).noCollision())
+    public static final Block ACCELERATING_BUTTON = registerBlock("accelerating_button", new ButtonBlock(BlockSetType.IRON, 1, AbstractBlock.Settings.create().strength(2, 2))
     {
         @Override
         protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit){
@@ -40,7 +38,7 @@ public class ModBlocks {
 
         }
     });
-    public static final Block ACCELERATING_PRESSURE_PLATE = registerBlock("accelerating_pressure_plate", new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(2, 2)));
+    public static final Block INVISIBLE_PRESSURE_PLATE = registerBlock("invisible_pressure_plate", new PressurePlateBlock(BlockSetType.GOLD, AbstractBlock.Settings.create().strength(2, 2)));
 
 
 

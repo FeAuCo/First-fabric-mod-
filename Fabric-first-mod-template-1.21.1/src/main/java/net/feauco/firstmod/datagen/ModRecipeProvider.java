@@ -24,5 +24,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SPIKES).pattern("101").pattern("020").pattern("101").input('0', Items.GRAY_CONCRETE).input('1', Items.IRON_INGOT).input('2', Items.END_ROD).criterion(hasItem(Items.END_ROD), conditionsFromItem(Items.END_ROD)).offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PIVAS_BOTTLE).pattern(" 1 ").pattern(" 12").pattern(" 0 ").input('0', Items.GLASS_BOTTLE).input('1', Items.GLASS).input('2', Items.END_ROD).criterion(hasItem(Items.END_ROD), conditionsFromItem(Items.END_ROD)).offerTo(exporter);
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POISONED_DAGGER).input(Items.IRON_SWORD).input(Items.PRISMARINE_SHARD).input(Items.SPIDER_EYE);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACCELERATING_BUTTON).input(ModBlocks.ACCELERATOR).criterion(hasItem(ModBlocks.ACCELERATOR), conditionsFromItem(ModBlocks.ACCELERATOR)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACCELERATING_STAIRS).pattern("0  ").pattern("00 ").pattern("000").input('0', ModBlocks.ACCELERATOR).criterion(hasItem(ModBlocks.ACCELERATOR), conditionsFromItem(ModBlocks.ACCELERATOR)).offerTo(exporter);
+
     }
 }
