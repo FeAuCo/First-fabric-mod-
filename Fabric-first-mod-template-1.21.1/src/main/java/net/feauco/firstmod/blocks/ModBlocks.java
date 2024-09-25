@@ -2,6 +2,7 @@ package net.feauco.firstmod.blocks;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.feauco.firstmod.FirstMod;
+import net.feauco.firstmod.blocks.custom.Lamp;
 import net.feauco.firstmod.blocks.custom.Spikes;
 import net.minecraft.block.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -40,7 +41,7 @@ public class ModBlocks {
     });
     public static final Block INVISIBLE_PRESSURE_PLATE = registerBlock("invisible_pressure_plate", new PressurePlateBlock(BlockSetType.GOLD, AbstractBlock.Settings.create().strength(2, 2)));
 
-
+    public static final Block LAMP = registerBlock("lamp", new Lamp(AbstractBlock.Settings.create().strength(1f).luminance(state -> state.get(Lamp.CLICKED) ? 15 : 0)));
 
     private static void registerBlockItem(String name, Block block){
         Registry.register(Registries.ITEM, Identifier.of(FirstMod.MOD_ID, name), new BlockItem(block, new Item.Settings()));

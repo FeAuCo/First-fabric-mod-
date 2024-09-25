@@ -11,6 +11,7 @@
   "block.firstmod.accelerating_button": "Accelerating Button",
   "block.firstmod.accelerating_stairs": "Accelerating Stairs",
   "block.firstmod.invisible_pressure_plate": "Invisible Pressure Plate",
+  "block.firstmod.lamp": "Lamp",
 
   "itemgroup.firstmod.custom_items" : "Custom items",
   "itemgroup.firstmod.custom_blocks" : "Custom blocks",
