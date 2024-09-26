@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.feauco.firstmod.blocks.ModBlocks;
+import net.feauco.firstmod.component.ModDataComponentTypes;
 import net.feauco.firstmod.items.ModItemGroups;
 import net.feauco.firstmod.items.ModItems;
 import org.slf4j.Logger;
@@ -18,6 +19,7 @@ public class FirstMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModDataComponentTypes.registerDataComponentTypes();
 		FuelRegistry.INSTANCE.add(ModItems.HYDROGEN, 2000);
 	}
 }

@@ -1,5 +1,7 @@
 package net.feauco.firstmod.items.custom;
 
+
+import net.feauco.firstmod.component.ModDataComponentTypes;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -28,6 +30,8 @@ public class PoisonedDagger extends Item {
                 target.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 40, 2, false, false, false));
                 world.playSound(null, target.getBlockPos(), SoundEvents.ITEM_MACE_SMASH_AIR, SoundCategory.MASTER, 10000, 1);
             }
+            stack.set(ModDataComponentTypes.HIT_COUNT, stack.getOrDefault(ModDataComponentTypes.HIT_COUNT, 0) + 1);
+
 
         }
         return true;
@@ -41,6 +45,9 @@ public class PoisonedDagger extends Item {
             tooltip.add(Text.translatable("tooltip.firstmod.poisoned_dagger.alt"));
         }else {
             tooltip.add(Text.translatable("tooltip.firstmod.poisoned_dagger.hint"));
+        }
+        if (stack.get(ModDataComponentTypes.HIT_COUNT) != null){
+            tooltip.add(Text.literal("§2Number of hits:§r " + stack.get(ModDataComponentTypes.HIT_COUNT)));
         }
         super.appendTooltip(stack, context, tooltip, type);
     }
