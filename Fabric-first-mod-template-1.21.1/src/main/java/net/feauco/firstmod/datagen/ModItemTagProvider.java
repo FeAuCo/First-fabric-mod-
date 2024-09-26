@@ -6,6 +6,7 @@ import net.feauco.firstmod.items.ModItems;
 import net.feauco.firstmod.util.ModTags;
 import net.minecraft.item.Items;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.tag.ItemTags;
 
 
 import java.util.concurrent.CompletableFuture;
@@ -20,6 +21,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.ITEMS_TO_DESTROY).add(ModItems.PIVAS_BOTTLE).add(Items.GLASS_BOTTLE).add(Items.APPLE);
-
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.PICKAXE_EXP);
     }
 }
