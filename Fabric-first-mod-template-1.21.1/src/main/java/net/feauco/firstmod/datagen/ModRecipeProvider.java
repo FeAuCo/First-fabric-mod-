@@ -26,6 +26,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POISONED_DAGGER).input(Items.IRON_SWORD).input(Items.PRISMARINE_SHARD).input(Items.SPIDER_EYE);
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACCELERATING_BUTTON).input(ModBlocks.ACCELERATOR).criterion(hasItem(ModBlocks.ACCELERATOR), conditionsFromItem(ModBlocks.ACCELERATOR)).offerTo(exporter);
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ACCELERATING_STAIRS).pattern("0  ").pattern("00 ").pattern("000").input('0', ModBlocks.ACCELERATOR).criterion(hasItem(ModBlocks.ACCELERATOR), conditionsFromItem(ModBlocks.ACCELERATOR)).offerTo(exporter);
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PICKAXE_EXP).pattern("111").pattern(" 0 ").pattern(" 0 ").input('0', Items.STICK).input('1', ModItems.EXPLOSIVE_DIAMOND);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PICKAXE_EXP).pattern("111").pattern(" 0 ").pattern(" 0 ").input('0', Items.STICK).input('1', ModItems.EXPLOSIVE_DIAMOND).criterion(hasItem(ModItems.EXPLOSIVE_DIAMOND), conditionsFromItem(ModItems.EXPLOSIVE_DIAMOND)).offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PICKAXE_3X3).pattern("111").pattern(" 0 ").pattern(" 0 ").input('0', Items.STICK).input('1', Items.NETHERITE_BLOCK).criterion(hasItem(Items.NETHERITE_BLOCK), conditionsFromItem(Items.NETHERITE_BLOCK)).offerTo(exporter);
     }
 }

@@ -1,9 +1,8 @@
 package net.feauco.firstmod.items;
 
 import net.feauco.firstmod.FirstMod;
+import net.feauco.firstmod.items.custom.Pickaxe3x3;
 import net.feauco.firstmod.items.custom.PoisonedDagger;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.component.ComponentType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
@@ -32,6 +31,8 @@ public class ModItems {
     public static final Item HYDROGEN = registerItem("hydrogen", new Item(new Item.Settings().food(ModFoodComponents.HYDROGEN)));
 
     public static final Item PICKAXE_EXP = registerItem("pickaxe_exp", new PickaxeItem(ModToolMaterials.CUSTOM_TOOLS, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CUSTOM_TOOLS, 5, -2))));
+
+    public static final Item PICKAXE_3X3 = registerItem("pickaxe_3x3", new Pickaxe3x3(ModToolMaterials.CUSTOM_TOOLS, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.CUSTOM_TOOLS, 6, -3))));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(FirstMod.MOD_ID, name), item);

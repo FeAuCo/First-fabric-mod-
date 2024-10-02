@@ -35,6 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.PICKAXE_EXP, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.PICKAXE_3X3, Models.HANDHELD);
     }
 }
 
