@@ -6,6 +6,7 @@ import net.feauco.firstmod.blocks.ModBlocks;
 import net.feauco.firstmod.blocks.custom.Lamp;
 import net.feauco.firstmod.items.ModItems;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -29,13 +30,13 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.LAMP).coordinate(BlockStateModelGenerator.createBooleanModelMap(Lamp.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
 
-
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.PICKAXE_EXP, Models.HANDHELD);
         itemModelGenerator.register(ModItems.PICKAXE_3X3, Models.HANDHELD);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.KIPPAH);
     }
 }
 

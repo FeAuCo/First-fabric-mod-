@@ -22,5 +22,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.ITEMS_TO_DESTROY).add(ModItems.PIVAS_BOTTLE).add(Items.GLASS_BOTTLE).add(Items.APPLE);
         getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.PICKAXE_EXP).add(ModItems.PICKAXE_3X3);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(ModItems.KIPPAH);
     }
 }
